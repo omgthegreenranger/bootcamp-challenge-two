@@ -7,17 +7,20 @@ body {
 /* Classes for header container */
 
 header{
-    background-color:green;
-
+    background-color:black;
+    padding: 0;
 }
 
 header h3{ 
     display:flex;
     justify-content:center;
+    vertical-align:baseline;
 }
 
 nav {
-    background-color:
+    
+    padding: 3px 0px 0px 0px;
+    background-color:darkgreen;
 
 }
 
@@ -27,7 +30,14 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-flex;
+    vertical-align:top;
+}
+
+nav ul li a, nav ul li a:visited {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
 }
 
 /* Classes for content container */
@@ -39,24 +49,38 @@ section {
 
 .biography { 
     background-color:antiquewhite;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .body-of-work {
     background-color:aquamarine;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:flex-start;
 }
 
 .contact {
     background-color:blueviolet;
 }
 
+
+/* Classes for the biography */
+
+.biography figure {
+    flex: 1 0 fit-content;
+}
+
+.writeup {
+    flex: 1 0 fit-content;
+}
+
+/* Classes for the body of work container */
 .card{
     padding: 10px;
     border: 4px dashed black;
     margin: 4px;
     background-color:coral; 
-    flex-grow:1;  
+    flex:1 1 fit-content;
 }
 
 #project {

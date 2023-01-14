@@ -11,11 +11,11 @@
 
 **WHEN I click one of the links in the navigation**
 
-- [] the UI scrolls to the corresponding section
-    - [ ] Biography
-    - [ ] Body of Work
+- [ ] the UI scrolls to the corresponding section
+    - [X] Biography
+    - [X] Body of Work
         -[ ] Individual Applications
-    - [ ] Contact Me
+    - [X] Contact Me
 
 **WHEN I click on the link to the section about their work**
 
