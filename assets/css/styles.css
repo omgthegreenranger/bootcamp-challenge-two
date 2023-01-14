@@ -1,0 +1,69 @@
+body {
+    background-color: lightslategrey;
+    padding:5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Classes for header container */
+
+header{
+    background-color:green;
+
+}
+
+header h3{ 
+    display:flex;
+    justify-content:center;
+}
+
+nav {
+    background-color:
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Classes for content container */
+section {
+    display: flex;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+.biography { 
+    background-color:antiquewhite;
+}
+
+.body-of-work {
+    background-color:aquamarine;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.contact {
+    background-color:blueviolet;
+}
+
+.card{
+    padding: 10px;
+    border: 4px dashed black;
+    margin: 4px;
+    background-color:coral; 
+    flex-grow:1;  
+}
+
+#project {
+    
+}
+
+#project-description {
+    
+}
+/* Classes for footer container */
