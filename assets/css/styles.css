@@ -1,27 +1,37 @@
 body {
-    background-color: lightslategrey;
-    padding:5px;
+    background-image:url("/assets/images/background-starfield.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Classes for header container */
 
 header{
-    background-color:black;
+    display: flex;
     padding: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
 }
 
 header h3{ 
-    display:flex;
-    justify-content:center;
+    display:inline-block;
+    justify-content:left;
     vertical-align:baseline;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+header h3 a {
+    text-decoration: none;
+    color:burlywood;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav {
-    
-    padding: 3px 0px 0px 0px;
-    background-color:darkgreen;
-
+    display: block;
+    background-color:green;
 }
 
 nav ul {
@@ -31,7 +41,6 @@ nav ul {
 
 nav ul li {
     display: inline-flex;
-    vertical-align:top;
 }
 
 nav ul li a, nav ul li a:visited {
@@ -40,47 +49,108 @@ nav ul li a, nav ul li a:visited {
     font-weight: 900;
 }
 
+
 /* Classes for content container */
+
+main {
+    display:flex;
+    flex-direction: row;
+}
 section {
-    display: flex;
     padding: 10px;
     margin: 5px 0px 5px 0px;
 }
 
 .biography { 
+    display: inline-flex;
     background-color:antiquewhite;
-    flex-direction: row;
-    flex-wrap: wrap;
+    border-radius: 10px 50px 0px 50px;
+    width: 20%;
+    height:fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.workblock {
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .body-of-work {
-    background-color:aquamarine;
-    flex-wrap: wrap;
-    justify-content:flex-start;
+    display: flex;
+    border: 5px solid green;
+    border-radius: 10px 50px 0px 50px;
+    flex-flow: row wrap;
 }
-
-.contact {
-    background-color:blueviolet;
-}
-
 
 /* Classes for the biography */
 
 .biography figure {
-    flex: 1 0 fit-content;
+    display: block;
+}
+
+.biography figure img {
+    max-width:initial;
+    height:auto;
+}
+
+.contact {
+    display: block;
+    /* width: 15% */
+}
+
+.contactbox {
+    padding:2px;
+    border: 1px solid blue;
 }
 
 .writeup {
-    flex: 1 0 fit-content;
+    text-align:justify;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media i {
+    padding: 5px 5px 5px 5px;
+    font-size: 150%;
+    color: grey;
+    float: left;
+}
+
+.social-media i:hover {
+    color: black;
+    transform: scale(1.5);
 }
 
 /* Classes for the body of work container */
+
+.workblock header {
+    display: flex;
+    color: white;
+}
+
 .card{
+    display: inline-block;
     padding: 10px;
-    border: 4px dashed black;
+    /* border: 4px dashed black; */
     margin: 4px;
-    background-color:coral; 
-    flex:1 1 fit-content;
+    background: coral;
+    transition: background-color 2s ease-out 100ms
+    max-width: 48%;
+    min-width:48%;
+}
+
+.card:hover {
+    background-color: yellow;
+}
+
+.bootcamp {
+    content: "Bootcamp App";
+    position: relative;
+
 }
 
 #project {
