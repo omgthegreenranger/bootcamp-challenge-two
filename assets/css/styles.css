@@ -1,8 +1,10 @@
 
 body {
+    display: flex;
     background-image:url("../images/background-starfield.jpg");
     background-size: 100%;
     background-attachment: fixed;
+    flex-direction: column;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -31,34 +33,6 @@ header h1 a {
     text-shadow: 0px 0px 10px purple;
 }
 
-nav {
-    display: block;
-    background-color:green;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav ul li {
-    display: inline-flex;
-}
-
-nav ul li a:hover{
-    text-shadow: 0 0 10px yellow;
-}
-
-nav ul li a, nav ul li a:visited {
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-}
-
-summary {
-    font-weight:bolder;
-}
-
 /* Classes for content container */
 
 main {
@@ -70,13 +44,26 @@ section {
     margin: 5px 0px 5px 0px;
 }
 
-.navbar {
-    width: 20%;
+details{ 
+    display: flex;
 }
+summary {
+    font-weight:bolder;
+}
+.biobar {
+    display: inline-flex;
+    width: 20%;
+    height: fit-content;
+}
+.spacer {
+    display: flex;
+}
+
+
 .biography { 
     display: inline-flex;
     background-color:antiquewhite;
-    border-radius: 10px 50px 0px 50px;
+    /* border-radius: 10px 50px 0px 50px; */
     width: 100%;
     height: fit-content;
     flex-direction: column;
@@ -153,7 +140,6 @@ section {
     margin: 3px;
     position: relative;
     border: 1px solid white;
-    background-color:bisque;
     width: 48%;
     overflow: hidden;
     height: 20rem;
