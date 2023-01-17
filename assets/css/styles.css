@@ -15,15 +15,19 @@ header{
     padding: 0;
     flex-direction: column;
     flex-wrap: nowrap;
+    background-color: indigo;
+    width:100%
     
 }
 
-header h1{ 
-    display:inline-block;
-    justify-content:center;
-    /* vertical-align:baseline; */
+.name-block {
     padding: 10px 10px 10px 10px;
-    
+    width:auto;
+}
+
+header h1{ 
+    font-size: 300%;
+    margin-bottom:0px;
 }
 
 header h1 a {
@@ -33,14 +37,38 @@ header h1 a {
     text-shadow: 0px 0px 10px purple;
 }
 
+header p {
+    font-size: 150%;
+    
+}
+.social-media {
+    display: inline-flex;
+    justify-content: flex-end;
+    float:right;
+    align-items: flex-end;
+    
+}
+
+.social-media i {
+    display: inline;
+    padding: 5px 5px 5px 5px;
+    font-size: 150%;
+    color: grey;
+}
+
+.social-media i:hover {
+    color: black;
+    transform: scale(1.5);
+}
+
 /* Classes for content container */
 
 main {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 section {
-    padding: 10px;
+    /* padding: 10px; */
     margin: 5px 0px 5px 0px;
 }
 
@@ -50,15 +78,6 @@ details{
 summary {
     font-weight:bolder;
 }
-.biobar {
-    display: inline-flex;
-    width: 20%;
-    height: fit-content;
-}
-.spacer {
-    display: flex;
-}
-
 
 .biography { 
     display: inline-flex;
@@ -66,10 +85,10 @@ summary {
     /* border-radius: 10px 50px 0px 50px; */
     width: 100%;
     height: fit-content;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
-
 
 .workblock {
     display: inline-flex;
@@ -81,19 +100,24 @@ summary {
     display: flex;
     border: 5px solid green;
     /* box-shadow: 10px white; */
-    border-radius: 10px 50px 0px 50px;
-    flex-flow: row wrap;
+    /* border-radius: 5px 5px 5px 55px; */
+    flex-flow: column;
+    align-items:center;
 }
 
 /* Classes for the biography */
 
 .biography figure {
-    display: block;
+    flex: 0 3 initial;
 }
 
 .biography figure img {
-    max-width:initial;
+    max-width:100%;
     height:auto;
+}
+.contactboxes {
+    display: inline;
+    flex:0 1 min-content;
 }
 
 .contact {
@@ -107,24 +131,10 @@ summary {
 }
 
 .writeup {
+    display: inline-block;
     text-align:justify;
     margin: 10px 20px 5px 20px;
-}
-
-.social-media {
-    display: flex;
-}
-
-.social-media i {
-    padding: 5px 5px 5px 5px;
-    font-size: 150%;
-    color: grey;
-    justify-content: center;
-}
-
-.social-media i:hover {
-    color: black;
-    transform: scale(1.5);
+    flex:1 min-content;
 }
 
 /* Classes for the body of work container */
@@ -140,9 +150,10 @@ summary {
     margin: 3px;
     position: relative;
     border: 1px solid white;
-    width: 48%;
+    border-top-right-radius: 5px;
+    width: 85dvw;
     overflow: hidden;
-    height: 20rem;
+    height: 30dvh;
 }
 
 .card div {
@@ -153,6 +164,7 @@ summary {
     width: 50%;
     color: yellow;
     filter: none;
+    background: rgba(169, 169, 169, 0.5);
 }
 
 .card figure {
@@ -172,6 +184,10 @@ summary {
 .card figure img:hover {
     filter: none;
     transition: filter 0.3s ease-in 50ms;
+}
+
+.card div p, .card div h3 {
+    opacity: 1;
 }
 
 .project1 {
