@@ -1,5 +1,5 @@
 body {
-    background-image:url("/assets/images/background-starfield.jpg");
+    background-image:url("../images/background-starfield.jpg");
     background-size: 100%;
     background-attachment: fixed;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -75,6 +75,7 @@ section {
 .workblock {
     display: inline-flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .body-of-work {
@@ -132,32 +133,81 @@ section {
     color: white;
 }
 
-.card{
+.card {
     display: inline-block;
     padding: 10px;
-    /* border: 4px dashed black; */
-    margin: 4px;
-    background: coral;
-    transition: background-color 2s ease-out 100ms
-    max-width: 48%;
-    min-width:48%;
-}
-
-.card:hover {
-    background-color: yellow;
-}
-
-.bootcamp {
-    content: "Bootcamp App";
+    margin: 3px;
     position: relative;
+    border: 1px solid white;
+    background-color:bisque;
+    width: 48%;
+    overflow: hidden;
+    height:300px;
+}
+
+.card div {
+    z-index:1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    color: yellow;
+    filter: none;
+}
+
+.card figure {
+    margin: 0 0 0 0;
+}
+.card figure img {
+    z-index:0;
+    position: absolute;
+    top:0;
+    left:0;
+    height:auto;
+    width:100%;
+    filter: grayscale(100%);
+    object-fit: contain;
+}
+
+.card figure img:hover {
+    filter: none;
+    transition: filter 0.3s ease-in 50ms;
+}
+
+.project1 {
+    /* background-image: url("../images/project1.jpg"); */
+    background-position: center;
+ }
+/*
+.project2 {
+    background-image: url("../images/pexels-isabella-mendes-4067506.jpg");
+    backdrop-filter: greyscale(100%);
 
 }
 
-#project {
-    
+.project3 {
+    background-image: url("../images/pexels-markus-spiske-177598.jpg");
+    backdrop-filter: greyscale(100%);
 }
 
-#project-description {
-    
+.project4 {
+    background-image: url("../images/pexels-pixabay-257904.jpg");
+    backdrop-filter: greyscale(100%);
 }
-/* Classes for footer container */
+
+.project5 {
+    background-image: url("../images/pexels-tranmautritam-326514.jpg");
+    backdrop-filter: greyscale(100%);
+    opacity: 0.1;
+
+}
+
+.project6 {
+    background-image: url("../images/pexels-tranmautritam-381949.jpg");
+    backdrop-filter: greyscale(100%);
+
+}
+.project7 {
+    background-image: url("../images/project1.jpg");
+    backdrop-filter: greyscale(100%); */
+
