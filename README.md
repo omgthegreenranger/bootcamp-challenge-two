@@ -11,6 +11,8 @@ And here it is:
 
 ![Page display](./assets/images/Screenshot_20230118_011600.png)
 
+You can access the page live [here](https://omgthegreenranger.github.io/bootcamp-challenge-two/)
+
 I have included a checklist below as part of tracking my progress. My comments are included where appropriate:
 
 **WHEN I load their portfolio**
